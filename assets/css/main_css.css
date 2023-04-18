@@ -1,0 +1,153 @@
+*{ 
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+/*SCROLLL BAR*/
+
+::-webkit-scrollbar {
+    width: 5px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(76, 0, 255); 
+        border-radius: 20px;
+        
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #15a1ff; 
+      }
+
+
+/* ******* navbar ******* */
+#navbarfl{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  /*
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    -moz-backdrop-filter: blur( 10px );
+    */
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 6000;
+}
+
+.navbar-brand{
+    padding-left: 30px;
+}
+
+.navbar-toggler{
+    color:transparent;
+    padding-right: 10px;  
+}
+
+#navbarNavDropdown{
+    justify-content: flex-end;
+}
+
+/*LOGO*/
+#navlogo{
+    width: 200px;
+    height: auto;
+}
+
+/*navbar items*/
+#navbar-main-list{
+    padding-right:20px;
+}
+
+#navbar-list{
+    padding: 0px 3px 0px 8px;
+}
+
+#navbar-link{
+    padding-top: 0px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#navbar-button{
+    padding-top: 0px;
+    color: rgb(204, 194, 194);
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-style: none;
+    height: 40px;
+    width:90px;
+}
+
+#navbar-button-contact{
+    background-color: blue;
+    border-radius: 20px ;
+    color: white;    
+    padding-top: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    border-style: none;
+    height: 40px;
+    width:90px;
+}
+
+#navbar-button-active{
+    padding-top: 0px;
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-style: none;
+    height: 40px;
+    width:90px;
+}
+
+#navbar-button:hover{
+    color: white;
+}
+
+
+
+/* FOOTER */
+
+#footer-card{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#footer-navs{
+    text-decoration: none;
+}
+
+#footer-svg{
+    width: 25px;
+    height: auto;
+    fill: #aeafaf;
+    margin-left: 5px;
+}
+
+
+#footer-svg:hover{
+    fill: #ffffff;
+}
+
+
+#hr-footer{
+    color: gray;
+}

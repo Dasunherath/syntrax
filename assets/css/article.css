@@ -1,0 +1,10 @@
+.article-cls{
+    font-family: 'Lexend', sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.article-head{
+    justify-content: center;
+    text-align: center;
+}

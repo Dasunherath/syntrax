@@ -1,0 +1,483 @@
+<!--
+⣿⣿⣿⣿⣿⣿⠏⠌⣾⣿⣿
+⣿⣿⣿⣿⣿⠀⠀⠸⠿⣿⣿⣿
+⣿⣿⣿⣿⠃⠀⣠⣾⣿⣿⣿
+⣿⣿⡿⠃⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⠃⠀⠀⣾⣿⣿⣿⣿⣿⣦⠀⠈⠻⣿⣿⣿
+⣿⣿⠀⠀⠀⣿⣿⣿⠟⠉⠉⠉⢃⣤⠀⠈⢿⣿⣿⣿
+⣿⣿⠀⠀⠀⢸⣿⡟⠀⠀⠀⠀⢹⣿⣧⠀⠀⠙⣿⣿
+⣿⣿⡆⠀⠀⠈⠻⡅⠀⠀⠀⠀⣸⣿⠿⠇⠀⠀⢸⣿
+⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠔⠛⠁⠀⠀⠀⣠⣿⣿
+⣿⣿⣿  created by ⠀⢀⣴⣿⣿⣿
+⣿⣿⣿⠃  Dasun    ⣠⣾⣿⣿
+⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿
+⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⢰⣿
+⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿
+⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿
+⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀  ⢹⣿
+⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿
+⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿
+ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="dasun herath" content="web developement">
+    <meta name="syntraX" content="front end developement">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasun Herath</title>
+
+<!--Import vendor cdn
+    <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.3.0/dist/flowbite.min.css" /> 
+-->
+
+<!-- Import Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    
+<!-- Import local css files-- <link rel="stylesheet" href="assets/css/tailwind.css"> -->
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main_css.css">
+    <link rel="stylesheet" href="assets/css/land.css">
+    <link rel="stylesheet" href="assets/css/navbar_toggle_animation.css">
+
+</head>
+<body>
+
+
+    <!---NAVBAR--->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid" id="navbarfl">
+
+      <a class="navbar-brand" href="#">     
+        <img id="navlogo" alt="logo"  src="assets/img/logo3.svg" alt="logo"> 
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <svg class="bars"  viewBox="0 0 100 100" onclick="this.classList.toggle('active')">
+          <path class="line top"  d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"></path>
+          <path class="line middle" d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272"></path>
+          <path class="line bottom" d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272"></path>
+        </svg>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" id="navbar-main-list">
+
+          <li class="nav-item" id="navbar-list">
+            <a class="nav-link"  href="#" id="navbar-link">
+              <button  id="navbar-button-active">
+                 Home 
+              </button>
+            </a>
+          </li>
+
+          <li class="nav-item" id="navbar-list">
+            <a class="nav-link"  href="about.html" id="navbar-link">
+              <button  id="navbar-button">
+                 About
+              </button>
+            </a>
+          </li>
+
+          <li class="nav-item" id="navbar-list">
+            <a class="nav-link"  href="work.html" id="navbar-link">
+              <button  id="navbar-button">
+                 Work
+              </button>
+            </a>
+          </li>
+
+          <li class="nav-item" id="navbar-list">
+            <a class="nav-link"  href="contact.html" id="navbar-link">
+              <button  id="navbar-button-contact">
+                  Contact 
+              </button>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- --LANDING SECTION-- -->
+  <div id="landingX">
+    
+    <div id="landing" style="background-image: url('assets/img/bg.jpg'); ">
+    
+      <center> 
+        <font id="landing_text"> 
+          WE'RE HERE TO POWER UP YOUR GREAT IDEAS.
+          <br><br>
+        </font>
+        Owned by you, driven by us.
+      </center>
+    </div>
+  </div>
+
+
+  <!---CARDS FL-->
+  <div class="cardBgColor">
+    <br><br>
+    <div style="padding-left: 7%; padding-right: 7%;">
+      <div class="row row-cols-1 row-cols-md-3 ">
+
+        <div class="col py-3">
+          <div id="flcard" class="card h-100">
+          <center>
+            <img id="flimg" src="assets/img/landing/github-integration.svg" class="card-img-top" alt="design">
+          </center>
+            <div class="card-body">
+              <h2 class="card-title" id="fl-title">
+              We <font style="color: #814BF6;"> Design </font>  <br>
+              </h2>
+              <p class="card-text" id="fl-content">
+                Blend blast design strategies & creativity to create clean, eye catching designs
+                to acquire your goals in no time.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col py-3">
+          <div id="flcard" class="card h-100">
+          <center>
+            <img id="flimg" src="assets/img/landing/code-search.webp" class="card-img-top" alt="code-search">
+          </center>
+            <div class="card-body">
+              <h2 class="card-title" id="fl-title">
+              We<font style="color: #814BF6;"> Develop </font> <br>
+              </h2>
+              <p class="card-text" id="fl-content">
+                Combine creativity & expertise to create innovative, highly optimized websites 
+                that suits for your requirements.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col py-3">
+          <div id="flcard" class="card h-100">
+            <center>
+              <img id="flimg" src="assets/img/landing/monitoring.webp" class="card-img-top" alt="monitoring" style="padding-bottom: 13px;">
+            </center>
+            <div class="card-body">
+              <h2 class="card-title" id="fl-title">
+              We<font style="color: #814BF6;"> Deliver </font> <br>
+              </h2>
+              <p class="card-text" id="fl-content"> 
+                Build your brand, expand your footprint and make your 
+                business shine online and grow to the moon with us.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+<br><br><br>
+      <!-- SERVICE SECTION-->
+
+      <div class="service-section">
+        <div class="sub-topics">OUR SERVICES</div>
+        <br><br>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+              <div class="card h-100"  id="service-card">
+                <center>
+                  <br>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="currentColor" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 21 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/></svg>                  
+                  </div>
+                  <br>
+                </center> 
+                <div class="card-body">
+                  <h5 class="card-title" id="service-title" >Web developement</h5>
+                  <br>
+                  <p class="card-text" id="service-content"> With our experience and technologies, we can make your website stand out. </p>
+                </div>
+   
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100" id="service-card">
+                <center>
+                  <br>
+                  <div >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="currentColor" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 6.1c9.5-8.5 24-8.1 33 .9l8 8c9 9 9.4 23.5 .9 33l-85.8 95.9c-2.6 2.9-4.1 6.7-4.1 10.7V176c0 8.8-7.2 16-16 16H384.2c-4.6 0-8.9 1.9-11.9 5.3L100.7 500.9C94.3 508 85.3 512 75.8 512c-8.8 0-17.3-3.5-23.5-9.8L9.7 459.7C3.5 453.4 0 445 0 436.2c0-9.5 4-18.5 11.1-24.8l111.6-99.8c3.4-3 5.3-7.4 5.3-11.9V272c0-8.8 7.2-16 16-16h34.6c3.9 0 7.7-1.5 10.7-4.1L464 6.1zM432 288c3.6 0 6.7 2.4 7.7 5.8l14.8 51.7 51.7 14.8c3.4 1 5.8 4.1 5.8 7.7s-2.4 6.7-5.8 7.7l-51.7 14.8-14.8 51.7c-1 3.4-4.1 5.8-7.7 5.8s-6.7-2.4-7.7-5.8l-14.8-51.7-51.7-14.8c-3.4-1-5.8-4.1-5.8-7.7s2.4-6.7 5.8-7.7l51.7-14.8 14.8-51.7c1-3.4 4.1-5.8 7.7-5.8zM87.7 69.8l14.8 51.7 51.7 14.8c3.4 1 5.8 4.1 5.8 7.7s-2.4 6.7-5.8 7.7l-51.7 14.8L87.7 218.2c-1 3.4-4.1 5.8-7.7 5.8s-6.7-2.4-7.7-5.8L57.5 166.5 5.8 151.7c-3.4-1-5.8-4.1-5.8-7.7s2.4-6.7 5.8-7.7l51.7-14.8L72.3 69.8c1-3.4 4.1-5.8 7.7-5.8s6.7 2.4 7.7 5.8zM224 0c3.7 0 6.9 2.5 7.8 6.1l6.8 27.3 27.3 6.8c3.6 .9 6.1 4.1 6.1 7.8s-2.5 6.9-6.1 7.8l-27.3 6.8-6.8 27.3c-.9 3.6-4.1 6.1-7.8 6.1s-6.9-2.5-7.8-6.1l-6.8-27.3-27.3-6.8c-3.6-.9-6.1-4.1-6.1-7.8s2.5-6.9 6.1-7.8l27.3-6.8 6.8-27.3c.9-3.6 4.1-6.1 7.8-6.1z"/></svg>
+                  <br><br>
+                  </div>
+                </center> 
+                <div class="card-body">
+                  <h5 class="card-title"  id="service-title">UI/ UX Design</h5>
+                  <br>
+                  <p class="card-text" id="service-content"> Our elegant, eye-catching designs will grasp your audience's attention and make ideas unforgettable.</p>
+                </div>
+        
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100" id="service-card">
+                <center>
+                  <br>
+                  <div >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="currentColor"  viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"/></svg>                  
+                  </div>
+                  <br>
+                </center>   
+                <div class="card-body">
+                  <h5 class="card-title"  id="service-title">Performance Marketing</h5>
+                  <br>
+                  <p class="card-text" id="service-content"> Take Your Product Or Service To The Next Level By Getting The 
+                    Reach For Better Attention.</p>
+                </div>
+         
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+              <div class="card h-100" id="service-card">
+                <center>
+                  <br>
+                  <div >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="currentColor" viewBox="0 0 460 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"/></svg>
+                  </div>
+                  <br>
+                </center>
+                <div class="card-body">
+                  <h5 class="card-title" id="service-title">SEO</h5>
+                  <br>
+                  <p class="card-text" id="service-content"> Optimizing The Content To Get Within Top Search Engine Results for a better audience.</p>
+                </div>
+          
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100" id="service-card">
+                <center>
+                  <br>
+                  <div >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="service-svg" fill="currentColor" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M278.5 215.6L23 471c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l74.8-74.8c7.4 4.6 15.3 8.2 23.8 10.5C200.3 452.8 270 454.5 338 409.4c12.2-8.1 5.8-25.4-8.8-25.4l-16.1 0c-5.1 0-9.2-4.1-9.2-9.2c0-4.1 2.7-7.6 6.5-8.8l97.7-29.3c3.4-1 6.4-3.1 8.4-6.1c4.4-6.4 8.6-12.9 12.6-19.6c6.2-10.3-1.5-23-13.5-23l-38.6 0c-5.1 0-9.2-4.1-9.2-9.2c0-4.1 2.7-7.6 6.5-8.8l80.9-24.3c4.6-1.4 8.4-4.8 10.2-9.3C494.5 163 507.8 86.1 511.9 36.8c.8-9.9-3-19.6-10-26.6s-16.7-10.8-26.6-10C391.5 7 228.5 40.5 137.4 131.6C57.3 211.7 56.7 302.3 71.3 356.4c2.1 7.9 12 9.6 17.8 3.8L253.6 195.8c6.2-6.2 16.4-6.2 22.6 0c5.4 5.4 6.1 13.6 2.2 19.8z"/></svg>                 
+                  </div>
+                  <br>
+                </center>                
+                <div class="card-body">
+                  <h5 class="card-title" id="service-title">Content Writing</h5>
+                  <br>
+                  <p class="card-text" id="service-content">We Provide The Best Contents For Your Business Profiles,
+                     Websites And Social Media Promotions.</p>
+                </div>
+            
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100" id="service-card">
+                <center>
+                  <br>
+                  <div >
+                    <svg xmlns="http://www.w3.org/2000/svg"  class="service-svg" fill="currentColor"  viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0H109.6C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM499.7 254.9l-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3V384H128V250.6c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3V384v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V384 252.6c-4 1-8 1.8-12.3 2.3z"/></svg>
+                  </div>
+                  <br>
+                </center> 
+                <div class="card-body">
+                  <h5 class="card-title" id="service-title">eCommerce</h5>
+                  <br>
+                  <p class="card-text" id="service-content">We create exceptional omnichannel experiences that sets your brand apart
+                  </p>
+                </div>
+           
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+    <br><br><br><br><br>
+  </div>
+
+
+<!--   PROJECT SECTION -->
+
+  <div class="project-section">
+    <div class="sub-topics">PROJECTS</div>
+    <br><br>
+    <div class="projects">
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="col">
+            <div class="card h-100" id="project-card">
+              <img src="assets/img/project-img/flyo-proj-1.jpg" id="project-img" class="card-img-top h-100" alt="..." style="margin-bottom: 10px;">
+              <div class="card-body">
+                <h5 class="card-title">FLYO website</h5>
+                <p class="card-text">
+                  <a href="https://dasunherath10.github.io/Fylo-Dark-Theme-Landing-page.github.io/">
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="col">
+            <div class="card h-100" id="project-card">
+              <img src="assets/img/project-img/galaxiaga.jpg" id="project-img" class="card-img-top h-100" alt="..." style="margin-bottom: 10px;">
+              <div class="card-body">
+                <h5 class="card-title">GALAXIAGA website</h5>
+                <p class="card-text"> 
+                  <a href="work.html">
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="col">
+            <div class="card h-100" id="project-card">
+              <img src="assets/img/project-img/snap-proj-1.jpg" id="project-img" class="card-img-top h-100" alt="..." style="margin-bottom: 10px;">
+              <div class="card-body">
+                <h5 class="card-title">Snap website</h5>
+                <p class="card-text">
+                  <a href="./work.html">
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="col">
+            <div class="card h-100" id="project-card">
+              <img src="assets/img/project-img/room-proj-1.jpg" id="project-img" class="card-img-top h-100" alt="...">
+              <div class="card-body" style="margin-top: 15px;">
+                <h5 class="card-title">ROOM website</h5>
+                <p class="card-text">
+                  <a href="https://dasunherath10.github.io/News-homepage-css.github.io/">
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-button-div">
+              <a href="work.html" class="btn btn-primary" id="btn-article"> SEE MORE >> </a>
+        </div>
+      </div>
+    </div>
+
+    <br><br><br><br>
+  </div>
+
+  <!-- ARTICLE-SECTION -->
+    <div class="article-section">
+      <div class="sub-topics"> ARTICLES </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" id="article-card">
+            <div class="card-body">
+              <h5 class="card-title"> Digital marketing </h5>
+              <p class="card-text">Article written about digital marketing stratergies and some other criterias in brief.
+              </p>
+              <a href="articles/digital-marketing1.html" class="btn btn-primary" id="btn-article"> Read More... </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card" id="article-card">
+            <div class="card-body">
+              <h5 class="card-title"> NEO-BRUTALISM </h5>
+              <p class="card-text"> Article written about modern day UI design trend neo-brutalism that is used
+                by huge... 
+              </p>
+              <a href="articles/neo brutalism.html" class="btn btn-primary" id="btn-article"> Read More... </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <br><br><br>
+
+  <!-------- ending test ---------->
+
+  <footer class="bg-dark py-4 mt-4" id="footer-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h5 class="text-secondary mb-3">© Copyright 2023 SyntraX Digital</h5>
+          <p class="text-white">Welcome to SyntraX, your go-to source for high-quality websites with an exceptional service.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-secondary mb-3" id="footer-sub-title">Quick Links</h5>
+          <ul class="list-unstyled text-white">
+            <li><a href="index.html" class="text-white" id="footer-navs">Home</a></li>
+            <li><a href="about.html" class="text-white" id="footer-navs">About Us</a></li>
+            <li><a href="work.html" class="text-white" id="footer-navs">Work</a></li>
+            <li><a href="contact.html" class="text-white" id="footer-navs">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="text-secondary mb-3">Contact Us</h5>
+          <ul class="list-unstyled text-white">
+            <li> contact.syntrax@gmail.com   </li>
+    
+                      
+         </ul>
+         </div>
+      </div>
+
+      <hr  id="hr-footer">
+
+      <div class="d-flex flex-row-reverse">
+        
+        <svg id="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        <svg id="footer-svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </div>
+
+    </div>
+  </footer>  
+
+  
+
+    <!--js file-->
+    <script src="assets/js/main.js"></script>
+
+    <!--vendor javascript files-->
+    <script src="assets/vendor/typing effect/typing.js"></script>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <!--cdn-->
+
+</body>
+</html>

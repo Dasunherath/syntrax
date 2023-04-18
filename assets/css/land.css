@@ -1,0 +1,204 @@
+/* ****** LANDING TEXT ****** */
+
+#landingX{
+    position: relative;
+}
+
+#landingX::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#000000, transparent);
+    z-index: 1000;
+}
+
+#landing{
+    line-height: normal;
+    background-color: #000000;
+    padding-left: 15%; 
+    padding-right: 15%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#landing_text{
+    font-size:7vw;
+    font-weight: 900;
+    font-family: 'Lexend', sans-serif;
+    letter-spacing: 0.1;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-device-width: 640px) {
+    #landing_text{
+        font-size:10vw;
+        font-weight: 800;
+        font-family: 'Lexend', sans-serif;
+        letter-spacing: 0.1;
+        line-height: 1;
+        color: rgb(255, 255, 255);
+    }
+  }
+
+/* ****** First level cards ****** */
+
+.cardBgColor{
+    background-color: #000000;
+}
+
+#flcard{
+    background-color: transparent;
+    color: white;
+    padding-left: 20px;
+    background: rgba(36, 27, 59, 0.25);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    -moz-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 254, 254, 0.18);
+    width: 100%;
+}
+
+#flimg{
+    width: 75%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#fl-title{
+    font-family: 'Arvo', serif;
+    font-size: 40px;
+}
+
+#fl-content{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-card{
+  background-color: rgb(223, 80, 80);
+  border-radius: 20px;
+  border: transparent;
+  font-size: 20px;
+ 
+}
+
+#b-card{
+  color: white;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+}
+
+
+.sub-topics{
+    font-size: 3em;
+    font-weight: 500;
+    font-family: 'Lexend', sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #814BF6;
+}
+
+/****** SERVICE SECTION *******/
+
+#service-title{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.3em;
+    font-family: 'Lexend', sans-serif;
+
+}
+
+#service-content{
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.9em;
+}
+.service-section{
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+#service-card{
+    background-color: #18191b;
+    color: white;
+    border-radius: 15px;
+    border-bottom-color: #814BF6;
+    border-bottom-width: 0.2em;
+}
+
+.service-svg{
+    width: 20%;
+    height: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+/*PROJECT SHOW*/
+.project-section{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#project-card{
+    background-color: #18191b;
+    color: white;
+    border-color: rgb(112, 126, 250);
+    border-radius: 10px;
+    border-width: 3px;
+    margin-top: 20px;
+    font-family: 'Lexend', sans-serif;
+
+}
+
+#project-img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-button-div{
+    font-family: 'Lexend', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+#project-btn{
+    color: white;
+    background-color: #814BF6;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#project-btn:hover{
+    background-color: #15a1ff;
+
+}
+
+/* ARTICLE SECTION */
+.article-section{
+    font-family: 'Lexend', sans-serif;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#article-card{
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #9c9c9c;
+    color: white;
+}
+
+#btn-article{
+    border-radius: 30px;
+}
+

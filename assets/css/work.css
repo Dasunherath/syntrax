@@ -1,0 +1,88 @@
+
+
+.sub-topics{
+    font-size: 3em;
+    font-weight: 500;
+    font-family: 'Lexend', sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #814BF6;
+}
+
+.work-toogle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-toogle-btn{
+    border-color: blue;
+    margin-top: 5px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border-width: 2px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#work-toogle-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+}
+
+
+/*PROJECT SHOW*/
+.project-section{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#project-card{
+    background-color: #18191b;
+    color: white;
+    border-color: rgb(112, 126, 250);
+    border-radius: 10px;
+    border-width: 3px;
+    margin-top: 20px;
+    font-family: 'Lexend', sans-serif;
+
+}
+
+#project-img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#project-btn{
+    color: white;
+    background-color: #814BF6;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#project-btn:hover{
+    background-color: #15a1ff;
+
+}
+
+
+/* ARTICLE SECTION */
+.article-section{
+    font-family: 'Lexend', sans-serif;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#article-card{
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #9c9c9c;
+    color: white;
+}
+
+#btn-article{
+    border-radius: 30px;
+}
