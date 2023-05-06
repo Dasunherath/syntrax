@@ -63,6 +63,7 @@ body{
 
 /*LOGO*/
 #navlogo{
+    font-family: 'Press Start 2P', cursive;
     width: 200px;
     height: auto;
 }
